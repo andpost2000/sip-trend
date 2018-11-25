@@ -1,0 +1,37 @@
+@import '../../style/variables.scss';
+
+.main-nav {
+  background-color: $tc-1;
+
+  &__list {
+    min-height: 52px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    padding: 17px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: inherit;
+    transition: $trans-1;
+
+    &:hover {
+      background-color: #1EC8BB;
+    }
+    &:not(.active):active {
+      opacity: 0.9;
+    }
+
+    &.active {
+      cursor: default;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}

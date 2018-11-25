@@ -1,0 +1,41 @@
+@import '../../style/variables.scss';
+
+.project-row {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid $tc-1;
+
+  &:first-child {
+    border-top: 1px solid $tc-1;
+  }
+
+  &__img {
+    display: block;
+    width: 400px;
+    height: 267px;
+  }
+
+  &__content {
+    margin-left: 40px;
+    color: $tc-1;
+  }
+
+  &__list {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed $tc-1;
+
+    b {
+      display: inline-block;
+      width: 170px;
+    }
+
+    sup {
+      font-size: 11px;
+    }
+  }
+}

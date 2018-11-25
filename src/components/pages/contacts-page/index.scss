@@ -1,0 +1,40 @@
+@import '../../../style/variables.scss';
+
+.contacts {
+  padding: 50px 0;
+  color: $tc-1;
+  background-color: $tc-2;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+  }
+
+  &__list {
+    width: 30%;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 15px;
+
+    h3 {
+      width: 120px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__map {
+    width: 70%;
+    min-height: 500px;
+    background-color: #ddd;
+  }
+}

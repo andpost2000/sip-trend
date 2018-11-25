@@ -1,0 +1,44 @@
+@import '../../style/variables.scss';
+
+.footer {
+  padding: 35px 0;
+  background-color: #000000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20px;
+  }
+
+  &__link {
+    margin-bottom: 5px;
+    color: #fff;
+    border-bottom: 1px solid transparent;     
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid #fff;      
+    }
+
+    &.active {
+      border-bottom: 1px dashed #fff;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+  }
+
+  &__contacts {
+    color: #fff;
+    line-height: 25px;
+  }
+}

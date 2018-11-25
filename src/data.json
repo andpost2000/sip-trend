@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "totalArea": 32,
+      "buildArea": 45,
+      "terrace": 1,
+      "garage": 0,
+      "roofAngle": 20,
+      "floor": 1,
+      "price": 4830
+    },
+    {
+      "totalArea": 72,
+      "buildArea": 90,
+      "terrace": 1,
+      "garage": 0,
+      "roofAngle": 45,
+      "floor": 1,
+      "price": 8830
+    },
+    {
+      "totalArea": 130,
+      "buildArea": 65,
+      "terrace": 1,
+      "garage": 1,
+      "roofAngle": 45,
+      "floor": 2,
+      "price": 10200
+    },
+    {
+      "totalArea": 45,
+      "buildArea": 55,
+      "terrace": 0,
+      "garage": 0,
+      "roofAngle": 20,
+      "floor": 1,
+      "price": 5450
+    }
+  ]
+}

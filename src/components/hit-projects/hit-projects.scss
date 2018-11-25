@@ -1,0 +1,13 @@
+@import '../../style/variables.scss';
+
+.hit-projects {
+  padding: 50px 0;
+  background-color: $tc-2;
+  &__title {
+    color: $tc-1;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}

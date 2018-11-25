@@ -1,0 +1,20 @@
+@import '../../../style/variables.scss';
+
+.projects {
+  color: $tc-1;
+  background-color: $tc-2;
+
+  .container {
+    display: flex;
+  }
+
+  &__filter {
+    min-width: 20%;
+  }
+
+  &__list {
+    width: 80%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+}

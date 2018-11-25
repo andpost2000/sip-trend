@@ -1,0 +1,11 @@
+@import '../../style/variables.scss';
+
+.reviews {
+  padding: 50px 0;
+  background-color: $tc-2;
+  &__video {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+}
