@@ -31,6 +31,10 @@
 
     &:hover {
       color: #000;
+
+      &:before {
+        border-width: 2px;
+      }
     }
 
     &:before {
@@ -39,10 +43,12 @@
       left: 5px;
       transform: translateY(-50%);
       content: '';
-      width: 20px;
-      height: 20px;
+      width: 23px;
+      height: 23px;
       border: 1px solid $tc-1;
       border-radius: 3px;
+      transition: 0.2s;
+      box-sizing: border-box;
     }
 
     &:after {
@@ -61,7 +67,7 @@
     }
   }
 
-  label.checked {
+  input:checked+label {
     &:after {
       opacity: 1;
     }
@@ -69,6 +75,22 @@
 
   input:disabled+label {
     opacity: 0.6;
+  }
+
+  &__area-radio {
+    label:before {
+      border-radius: 50%;
+    }
+
+    &.checked {
+      pointer-events: none;
+
+      label:before {
+        background: green;
+        background-clip: content-box;
+        padding: 4px;
+      }
+    }
   }
 
   &__legend {

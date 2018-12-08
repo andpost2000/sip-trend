@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": 1,
       "totalArea": 32,
       "buildArea": 45,
       "terrace": 1,
@@ -10,6 +11,7 @@
       "price": 4830
     },
     {
+      "id": 2,
       "totalArea": 72,
       "buildArea": 90,
       "terrace": 1,
@@ -19,6 +21,7 @@
       "price": 8830
     },
     {
+      "id": 3,
       "totalArea": 130,
       "buildArea": 65,
       "terrace": 1,
@@ -28,6 +31,7 @@
       "price": 10200
     },
     {
+      "id": 4,
       "totalArea": 45,
       "buildArea": 55,
       "terrace": 0,

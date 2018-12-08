@@ -1,4 +1,7 @@
-const State = { value: 0};
+
+const State = {
+  value: 0,
+};
 
 const routReducer= (state = State, action: any)=>{
     switch(action.type){

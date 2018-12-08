@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import './project-page.scss';
 
+import ImgGallery from 'src/components/img-gallery';
 import ProjectDesc from './project-desc';
 
 class ProjectPage extends React.Component {
@@ -15,11 +16,7 @@ class ProjectPage extends React.Component {
         <div className="container">
           <div className="project__top">
             <div className="project__slider">
-              <img
-                className="project__img"
-                src={`/img/projects/${this.id}/1.jpg`}
-                alt={`Проект ${this.id}`}
-              />
+              <ImgGallery id={this.id}/>
             </div>
             <div className="project__content">
               <h3 className="project__title">Проект дома из СИП №{this.id}</h3>
@@ -54,6 +51,7 @@ class ProjectPage extends React.Component {
               buildArea={project.buildArea}
               roofAngle={project.roofAngle}
               floor={project.floor}
+              id={this.id}
             />
           </div>
         </div>

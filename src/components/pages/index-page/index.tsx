@@ -27,11 +27,6 @@ class IndexPage extends React.Component<Props, State> {
   public render(): JSX.Element {
     return (
       <React.Fragment>
-        <div className="attention">
-          <a href="#" className="attention__link">
-            Внимание!!! Это должен знать каждый, во избежание обмана.
-          </a>
-        </div>
         <MainSlider/>
         <Promo />
         <HitProjects />

@@ -4,10 +4,10 @@
   display: flex;
   width: 100px 5px;
   &__list-wrap {
-    width: 22%;
+    width: 47%;
   }
   &__list {
-    width: 100%;
+    width: 50%;
     margin-bottom: 30px;
   }
 
@@ -38,8 +38,15 @@
     }
   }
 
+  &__text {
+    li {
+      text-indent: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
   &__img-wrap {
-    width: 75%;
+    width: 50%;
     margin-left: 3%;
   }
   &__img {
