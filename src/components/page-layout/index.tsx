@@ -10,22 +10,25 @@ import ContactsPage from '../pages/contacts-page';
 import IndexPage from '../pages/index-page';
 import ProjectPage from '../pages/project-page/project-page';
 import ProjectsPage from '../pages/projects-page';
+import ScrollToTop from './scroll-to-top';
 
 class Page extends React.Component {
   public render(): JSX.Element {
     return (
       <Router>
         <React.Fragment>
-          <Header />
-          <Switch>
-            <Route exact={true} path="/" component={IndexPage} />
-            <Route path="/projects" component={ProjectsPage} />
-            <Route path="/project" component={ProjectPage} />
-            <Route path="/articles" component={ArticlesPage} />
-            <Route path="/contacts" component={ContactsPage} />
-            {/* <Route component={NotFoundPage} /> */}
-          </Switch>
-          <Footer />
+          <ScrollToTop>
+            <Header />
+            <Switch>
+              <Route exact={true} path="/" component={IndexPage} />
+              <Route path="/projects" component={ProjectsPage} />
+              <Route path="/project" component={ProjectPage} />
+              <Route path="/articles" component={ArticlesPage} />
+              <Route path="/contacts" component={ContactsPage} />
+              {/* <Route component={NotFoundPage} /> */}
+            </Switch>
+            <Footer />
+          </ScrollToTop>
         </React.Fragment>
       </Router>
     );

@@ -4,6 +4,7 @@
   padding: 50px 0;
   color: $tc-1;
   background-color: $tc-2;
+  flex-grow: 1;
 
   &__inner {
     display: flex;

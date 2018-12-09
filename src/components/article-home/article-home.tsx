@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './article-home.scss';
 
@@ -28,7 +29,7 @@ class ArticleHome extends React.Component {
                 войны по этому вопросу. В бой идут аргументы со всех сторон,
                 доказательства и факты. Начнем с мифов.
               </p>
-              <a href="/articles" className='link'>Подробнее</a>
+              <NavLink to="/articles" className="link">Подробнее</NavLink>
             </div>
           </div>
         </div>

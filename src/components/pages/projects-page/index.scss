@@ -3,6 +3,7 @@
 .projects {
   color: $tc-1;
   background-color: $tc-2;
+  flex-grow: 1;
 
   .container {
     display: flex;

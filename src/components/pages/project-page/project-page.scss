@@ -4,6 +4,7 @@
   padding: 50px 20px;
   color: $tc-1;
   background-color: $tc-2;
+  flex-grow: 1;
   &__top {
     display: flex;
     padding-bottom: 50px;
