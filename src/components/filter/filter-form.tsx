@@ -33,6 +33,16 @@ class ComponentForm extends React.Component<Props> {
           <legend className="filter__legend">По площади:</legend>
           <div className="filter__area">
             <Field
+              className={classNames("filter__area-radio", {checked: radioCheck === '0'})}
+              name="Area"
+              value={0}
+              type="radio"
+              component={this.renderField}
+              label="Показать все"
+              labelSup=""
+              id={0}
+            />
+            <Field
               className={classNames("filter__area-radio", {checked: radioCheck === '50'})}
               name="Area"
               value={50}
@@ -111,8 +121,11 @@ const mapStateToProps = (state: any): ReduxProps => {
   }
 }
 const ReduxForm = connect(mapStateToProps)(ComponentForm);
-const Form = reduxForm({
-  form: 'post'
+const Form = reduxForm<any, {}>({
+  form: 'post',
+  initialValues: {
+    Area: 0,
+  },
 })(ReduxForm);
 
 export default Form;

@@ -7,7 +7,7 @@
     width: 47%;
   }
   &__list {
-    width: 50%;
+    width: 330px;
     margin-bottom: 30px;
   }
 
@@ -48,6 +48,9 @@
   &__img-wrap {
     width: 50%;
     margin-left: 3%;
+    .image-gallery {
+      min-width: 300px;
+    }
   }
   &__img {
     width: 47%;

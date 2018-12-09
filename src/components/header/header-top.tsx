@@ -5,7 +5,7 @@ export const HeaderTop: React.SFC = () => {
     <div className="header__top">
       <div className="container">
         <div className="header__logo">
-          <img src="/img/logo.svg" alt="Trend SIP" />
+          <img src="/img/logo.jpg" width={70} height={85} alt="SIP Trend" />
         </div>
         <h1 className="header__promo">Строительство каркасно-панельных домов СИП.<br/>Купольных ЭКО домов.</h1>
         <div className="header__contacts">

@@ -19,7 +19,7 @@ class ProjectCard extends React.Component<Props> {
           Общая площадь: {this.props.totalArea} м<sup>2</sup>
         </p>
         <div className="project-card__content">
-          <img src={`img/projects/${this.props.id}/1.jpg`} alt={`Проект ${this.props.id}`} />
+          <img src={`img/projects/${this.props.id}/1.jpg`} width={"100%"} alt={`Проект ${this.props.id}`} />
           <div className="project-card__description">
             <p className="project-card__price">
               <span>Цена от:</span> {this.props.price} $

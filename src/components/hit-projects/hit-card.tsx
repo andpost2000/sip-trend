@@ -15,7 +15,7 @@ class HitCard extends React.Component<Props> {
       <li className="hit-projects__item hit-card">
         <a href="#" className="hit-card__link">
           <img
-            src={`img/projects/${this.props.id}/1.jpg`}
+            src={`img/projects/${this.props.id}/1m.jpg`}
             alt={`Проект ${this.props.id}`}
             className="hit-card__img"
           />

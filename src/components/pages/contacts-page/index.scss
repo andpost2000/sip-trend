@@ -36,5 +36,9 @@
     width: 70%;
     min-height: 500px;
     background-color: #ddd;
+    iframe {
+      display: block;
+      border: 0;
+    }
   }
 }

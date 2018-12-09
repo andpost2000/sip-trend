@@ -1,0 +1,27 @@
+@import '../../../style/variables.scss';
+
+.articles-page {
+  padding: 50px 0;
+  color: $tc-1;
+  background-color: $tc-2;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+  }
+
+  &__list {
+    min-width: 250px;
+    padding-right: 20px;
+    margin-right: 40px;
+    border-right: 1px solid $tc-1;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__article {
+    flex-grow: 1;
+  }
+}

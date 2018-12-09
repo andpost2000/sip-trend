@@ -16,7 +16,7 @@ class ProjectPage extends React.Component {
         <div className="container">
           <div className="project__top">
             <div className="project__slider">
-              <ImgGallery id={this.id}/>
+              <ImgGallery id={this.id} imgCount={project.pictureCount}/>
             </div>
             <div className="project__content">
               <h3 className="project__title">Проект дома из СИП №{this.id}</h3>
@@ -39,7 +39,7 @@ class ProjectPage extends React.Component {
                 <p className="project__price-descript">
                   * Цена указана для комплектации "Стандарт"
                 </p>
-                <a href="#" className="project__link">
+                <a href="#" className="project__link link">
                   Подробнее о комплектациях
                 </a>
               </div>
@@ -52,6 +52,10 @@ class ProjectPage extends React.Component {
               roofAngle={project.roofAngle}
               floor={project.floor}
               id={this.id}
+              totalRoof={project.totalRoof}
+              plotSize={project.plotSize}
+              advantages={project.advantages}
+              planCount={project.planCount}
             />
           </div>
         </div>

@@ -13,8 +13,9 @@ class Footer extends React.Component {
           <div className='footer__navigation'>
             <NavLink exact={true} to='/'  className='footer__link current'>Главная</NavLink>
             <NavLink to="/projects" className='footer__link'>Проекты</NavLink>
-            <a href='#' className='footer__link'>Панели</a>
-            <a href='#' className='footer__link'>О нас</a>
+            <NavLink to="/articles" className='footer__link'>Статьи</NavLink>
+            {/* <a href='#' className='footer__link'>Панели</a> */}
+            {/* <a href='#' className='footer__link'>О нас</a> */}
             <NavLink to="/contacts" className='footer__link'>Контакты</NavLink>
           </div>
           <SocialLink />

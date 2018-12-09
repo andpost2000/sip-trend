@@ -10,7 +10,7 @@ class ComplectCard extends React.Component<Props> {
     return (
       <li className="complect__item">
         <h3 className="complect__sub-title">{this.props.title}</h3>
-        <img src={`img/${this.props.id}.jpg`} alt={this.props.title} className="complect__img" />
+        <img src={`img/projects/${this.props.id}/1m.jpg`} alt={this.props.title} className="complect__img" />
       </li>
     );
   }

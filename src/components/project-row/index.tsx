@@ -21,7 +21,7 @@ class ProjectRowComponent extends React.Component<ReduxState> {
       const areaInMin = checkboxes.Area ? checkboxes.Area - 50 : 0;
       const areaInMax = checkboxes.Area ? checkboxes.Area : 1000;
       const projectsTotal: any[] = projects.filter((item: any) =>
-        this.filterTotal(item.totalArea, areaInMin, areaInMax)
+        this.filterTotal(item.totalArea, areaInMin, areaInMax, checkboxes.Area)
       );
       const projectsGarage: any[] = projectsTotal.filter((item: any) =>
         checkboxes.Garage ? item.garage : item
@@ -51,8 +51,10 @@ class ProjectRowComponent extends React.Component<ReduxState> {
       </ul>
     );
   }
-  private filterTotal(check: number, min: number, max: number) {
-    if (check <= max && check > min) {
+  private filterTotal(check: number, min: number, max: number, area: string) {
+    // tslint:disable-next-line:no-console
+    console.log("=filter=", area);
+    if (area === "0" || (check <= max && check > min)) {
       return true;
     }
     return false;

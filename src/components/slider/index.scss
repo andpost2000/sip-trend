@@ -3,6 +3,10 @@
 .slider {
   max-width: 1300px;
   margin: 0 auto;
+  &__wrap {
+    padding: 50px 0;
+    background-color: $tc-2;
+  }
   &__item {
     width: 100%;
     position: relative;

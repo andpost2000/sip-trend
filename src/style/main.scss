@@ -8,7 +8,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: $tc-1;
+  cursor: default;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -31,14 +33,23 @@ input:focus,
 textarea:focus {
   outline: 0;
 }
+::selection {
+  background: transparent;
+}
+::-moz-selection {
+  background: transparent;
+}
+
 footer {
   margin-top: auto;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .container {
   max-width: 1300px;
   padding: 0 50px;
@@ -60,9 +71,22 @@ ul {
   border-radius: 6px;
   transition: $trans-1;
   cursor: pointer;
+
   &:hover {
     color: $contr-c;
     background-color: $tc-1;
+  }
+}
+
+.link {
+  color: rgba(33, 33, 226, 1);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    color: rgba(33, 33, 226, 0.75);
+    text-decoration: underline;
   }
 }
 

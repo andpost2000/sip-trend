@@ -3,7 +3,8 @@ import * as React from 'react';
 
 import './index.scss';
 
-import Complect from 'src/components/complect/complect';
+// import Complect from 'src/components/complect/complect';
+import ArticleHome from 'src/components/article-home/article-home';
 import HitProjects from 'src/components/hit-projects/hit-projects';
 import Promo from 'src/components/promo/promo';
 import Reviews from 'src/components/reviews';
@@ -30,7 +31,8 @@ class IndexPage extends React.Component<Props, State> {
         <MainSlider/>
         <Promo />
         <HitProjects />
-        <Complect />
+        <ArticleHome />
+        {/* <Complect /> */}
         <Reviews />
       </React.Fragment>
     );

@@ -8,6 +8,10 @@
     display: flex;
     padding-bottom: 50px;
     border-bottom: 1px solid $tc-1;
+    .image-gallery {
+      width: 875px;
+      height: 430px;
+    }
   }
   &__img {
     display: block;
@@ -37,10 +41,6 @@
   }
   &__price-descript {
     font-size: 18px;
-  }
-  &__link {
-    color: rgb(33, 33, 226);
-    text-decoration: underline; 
   }
   &__bottom {
     padding-top: 40px;
