@@ -27,7 +27,7 @@ class PromoSlider extends React.Component {
             key={index}
             id={index + 1}
             totalArea={project.totalArea}
-            price={project.price}
+            price={project.totalArea * project.price}
           />
         ))}
       </Slider>

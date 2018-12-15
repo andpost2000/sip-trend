@@ -42,7 +42,7 @@ class ProjectRowItem extends React.Component<Props> {
             </li>
           </ul>
           <p className="project-row__price">
-            <span>Цена от:</span> {this.props.price} $
+            <span>Цена от:</span> {this.props.totalArea * this.props.price} $
           </p>
           <NavLink
             to={`project#${this.props.id}`}

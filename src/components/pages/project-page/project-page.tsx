@@ -35,7 +35,7 @@ class ProjectPage extends React.Component {
                 </li>
               </ul>
               <div className="project__price">
-                <span>Цена от:</span> {project.price} $
+                <span>Цена от:</span> {project.totalArea * project.price} $
                 <p className="project__price-descript">
                   * Цена указана для комплектации "Стандарт"
                 </p>

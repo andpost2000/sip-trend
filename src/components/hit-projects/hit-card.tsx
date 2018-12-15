@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 import './hit-card.scss';
 
@@ -13,7 +14,7 @@ class HitCard extends React.Component<Props> {
   public render(): JSX.Element {
     return (
       <li className="hit-projects__item hit-card">
-        <a href="#" className="hit-card__link">
+        <Link to={`project#${this.props.id}`} className="hit-card__link">
           <img
             src={`img/projects/${this.props.id}/1m.jpg`}
             alt={`Проект ${this.props.id}`}
@@ -32,7 +33,7 @@ class HitCard extends React.Component<Props> {
               Проект дома из СИП №{this.props.id}
             </h3>
           </div>
-        </a>
+        </Link>
       </li>
     );
   }

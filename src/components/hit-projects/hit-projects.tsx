@@ -19,9 +19,9 @@ class HitProjects extends React.Component {
             {projectsHit.map((project: any, index: number) => (
               <HitCard
                 key={index}
-                id={index + 1}
+                id={project.id}
                 totalArea={project.totalArea}
-                price={project.price}
+                price={project.totalArea * project.price}
                 discount={500}
               />
             ))}
