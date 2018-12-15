@@ -6,7 +6,7 @@ import './index.scss';
 class MainSlider extends React.Component {
   public render(): JSX.Element {
     const settings = {
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       className: 'slider',
       dots: true,

@@ -23,6 +23,9 @@ class MainNav extends React.Component {
             <li className="main-nav__item">
               <NavLink to="/articles" className="main-nav__link">Статьи</NavLink>
             </li>
+            <li className="main-nav__item">
+              <NavLink to="/complect" className="main-nav__link">Комплектации</NavLink>
+            </li>
             {/* <li className="main-nav__item">
               <a href="#" className="main-nav__link">Технологии</a>
             </li> */}

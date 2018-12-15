@@ -1,9 +1,5 @@
-// import autobind from 'autobind-decorator';
 import * as React from 'react';
 
-import './index.scss';
-
-// import Complect from 'src/components/complect/complect';
 import ArticleHome from 'src/components/article-home/article-home';
 import HitProjects from 'src/components/hit-projects/hit-projects';
 import Promo from 'src/components/promo/promo';
@@ -32,7 +28,6 @@ class IndexPage extends React.Component<Props, State> {
         <Promo />
         <HitProjects />
         <ArticleHome />
-        {/* <Complect /> */}
         <Reviews />
       </React.Fragment>
     );

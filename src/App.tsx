@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Provider } from 'react-redux';
 
-import './App.scss';
-
 import Page from './components/page-layout';
 import store from './store';
 

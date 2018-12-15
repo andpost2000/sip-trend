@@ -1,0 +1,45 @@
+@import '../../../style/variables.scss';
+
+.complect-page {
+  padding: 50px 0;
+  color: $tc-1;
+  background-color: $tc-2;
+  flex-grow: 1;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+  }
+
+  &__list {
+    min-width: 270px;
+    margin-right: 40px;
+    border-right: 1px solid $tc-1;
+  }
+
+  &__item {
+    border-bottom: 1px solid #000000;
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &__article {
+    flex-grow: 1;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.03);
+    transition: $trans-1;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &.current,
+    &:active {
+      color: $tc-2;
+      background-color: $tc-1;
+    }
+  }
+}

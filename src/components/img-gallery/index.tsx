@@ -2,7 +2,6 @@ import * as React from 'react';
 import ImageGallery from 'react-image-gallery';
 
 import 'node_modules/react-image-gallery/styles/scss/image-gallery.scss';
-import './index.scss';
 
 interface Props {
   id: number;

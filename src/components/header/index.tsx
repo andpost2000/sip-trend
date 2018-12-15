@@ -1,4 +1,3 @@
-// import autobind from 'autobind-decorator';
 import * as React from 'react';
 
 import './index.scss';

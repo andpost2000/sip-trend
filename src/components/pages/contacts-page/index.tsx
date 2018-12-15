@@ -10,7 +10,7 @@ class ContactsPage extends React.Component {
           <div className="container">
             <div className="contacts__title section-title">Наши контакты</div>
             <h3 className="contacts__sub-title">
-              Общество с Ограниченной Ответственностью "Тренд СИП"
+              Общество с Ограниченной Ответственностью "СипТренд"
             </h3>
             <div className="contacts__inner">
               <ul className="contacts__list">
@@ -21,22 +21,22 @@ class ContactsPage extends React.Component {
                     <br />
                     г. Поставы,
                     <br />
-                    ул. Ленинская д. 150
+                    ул. Космонавтов д. 66 офис 6
                   </p>
                 </li>
                 <li className="contacts__item">
                   <h3>УНП:</h3>
-                  <p>000000000</p>
+                  <p>391627764</p>
                 </li>
                 <li className="contacts__item">
                   <h3>Реквизиты:</h3>
                   <p>
-                    р/с 3012020343064
+                    р/с BY35BAPB30126521100100000000
                     <br />
-                    в ЦБУ №230 Ф №216
+                    код BAPBBY2X
                     <br />
-                    ОАО "Беларусьбанк"
-                    <br />в г. Полоцк
+                    ОАО "БЕЛАГРОПРОМБАНК"
+                    <br />г. Минск
                   </p>
                 </li>
                 <li className="contacts__item">
@@ -46,9 +46,9 @@ class ContactsPage extends React.Component {
                 <li className="contacts__item">
                   <h3>Телефоны:</h3>
                   <p>
-                    +375 (29) 000 00 00
+                    +375 (33) 320 90 08
                     <br />
-                    +375 (33) 000 00 00
+                    +375 (29) 000 00 00
                   </p>
                 </li>
                 <li className="contacts__item">
