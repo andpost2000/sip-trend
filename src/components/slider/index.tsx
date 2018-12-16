@@ -20,19 +20,19 @@ class MainSlider extends React.Component {
       <div className="slider__wrap">
         <Slider {...settings}>
           <div className="slider__item">
-            <img src='img/slides/tools.jpg' width={1300} height={400} />
+            <img src='img/slides/tools.jpg' width={1300} height={400} alt='tools'/>
             <div className='slider__item-slogan top left'>
               <p>Профессиональный подход к работе</p>
             </div>
           </div>
           <div className="slider__item">
-            <img src='img/slides/plan.jpg' width={1300} height={400} />
+            <img src='img/slides/plan.jpg' width={1300} height={400} alt='plan'/>
             <div className='slider__item-slogan bottom left'>
               <p>Точность планирования</p>
             </div>
           </div>
           <div className="slider__item">
-            <img src='img/slides/keys.jpg' width={1300} height={400} />
+            <img src='img/slides/keys.jpg' width={1300} height={400} alt='key'/>
             <div className='slider__item-slogan top right'>
               <p>Ключи через месяц</p>
             </div>

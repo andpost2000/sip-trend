@@ -14,13 +14,14 @@ interface State {
 }
 
 class IndexPage extends React.Component<Props, State> {
-  constructor(props: any) {
+  constructor(props: {}) {
     super(props);
 
     this.state = {
       isOpen: false
-    };
+    }
   }
+
   public render(): JSX.Element {
     return (
       <React.Fragment>

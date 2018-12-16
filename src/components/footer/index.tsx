@@ -14,6 +14,7 @@ class Footer extends React.Component {
             <NavLink exact={true} to='/'  className='footer__link current'>Главная</NavLink>
             <NavLink to="/projects" className='footer__link'>Проекты</NavLink>
             <NavLink to="/articles" className='footer__link'>Статьи</NavLink>
+            <NavLink to="/complect" className='footer__link'>Комплектации</NavLink>
             {/* <a href='#' className='footer__link'>Панели</a> */}
             {/* <a href='#' className='footer__link'>О нас</a> */}
             <NavLink to="/contacts" className='footer__link'>Контакты</NavLink>
@@ -22,8 +23,8 @@ class Footer extends React.Component {
           <div className='footer__contacts'>
             Беларусь, 211875<br/>
             г. Поставы,<br/>
-            ул. Ленинская д. 150<br/>
-            +375 29 000 00 00
+            ул. Космонавтов 66-6<br/>
+            +375 33 320 90 08
           </div>
         </div>
       </footer>

@@ -6,8 +6,8 @@ import './style/main.scss';
 import App from './App';
 import register from './registerServiceWorker';
 
+register();
 ReactDOM.render(
     <App />,
   document.getElementById('root') as HTMLElement,
 );
-register();

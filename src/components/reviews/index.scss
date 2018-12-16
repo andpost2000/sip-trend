@@ -3,9 +3,47 @@
 .reviews {
   padding: 50px 0;
   background-color: $tc-2;
+
   &__video {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+  }
+
+  &__item {
+    width: 47%;
+    cursor: pointer;
+  }
+
+  &__popup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: default;
+  }
+
+  &__video-wrap {
+    position: relative;
+    width: 71vw;
+    height: 40vw;
+    background-color: $tc-1;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(110%)
+    }
   }
 }

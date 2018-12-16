@@ -20,8 +20,11 @@ const isLocalhost = Boolean(
 );
 
 export default function register(): any {
-  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator) {
+  // if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
+  // tslint:disable-next-line:no-console
+  console.log('inReg');
     const publicUrl = new URL(
       process.env.PUBLIC_URL!,
       window.location.toString(),
