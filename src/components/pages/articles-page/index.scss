@@ -26,3 +26,17 @@
     flex-grow: 1;
   }
 }
+
+
+@media (max-width: $tab) {
+  .articles-page {
+    &__list {
+      min-width: 160px;
+    }
+    &__item {
+      margin: 0;
+      padding: 15px 0;
+      border-bottom: 1px dashed $tc-1;
+    }
+  }
+}

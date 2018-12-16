@@ -56,3 +56,16 @@
     }
   }
 }
+
+@media (max-width: $tab) {
+  .header {
+    &__promo {
+      margin: 0 20px 0 0;
+      font-size: 22px;
+    }
+    .phone-link {
+      min-width: 130px;
+      font-size: 14px;
+    }
+  }
+}

@@ -91,3 +91,25 @@
     margin: 5px 0;
   }
 }
+
+@media (max-width: $tab)  {
+  .hit-card {
+    width: 240px;
+    height: 203px;
+    &:hover {
+      .hit-card__description {
+        bottom: -50%;
+      }
+    }
+    &__description {
+      padding: 5px 10px;
+    }
+    &__price {
+      width: 60%;
+    }
+    &__title {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

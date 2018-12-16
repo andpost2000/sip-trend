@@ -11,3 +11,9 @@
     background-color: $tc-2;
   }
 }
+
+@media (max-width: $tab) {
+  .promo {
+    padding: 30px 0;
+  }
+}

@@ -43,3 +43,22 @@
     }
   }
 }
+
+@media (max-width: $tab) {
+  .contacts {
+    &__list {
+      width: 40%;
+    }
+    &__item {
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    &__map {
+      width: 60%;
+    }
+  }
+}

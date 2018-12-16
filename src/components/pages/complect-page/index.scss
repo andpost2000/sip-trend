@@ -43,3 +43,11 @@
     }
   }
 }
+
+@media (max-width: $tab) {
+  .complect-page {
+    &__list {
+      min-width: 160px;
+    }
+  }
+}

@@ -11,3 +11,9 @@
     justify-content: space-around;
   }
 }
+
+@media (max-width: $tab) {
+  .hit-projects {
+    padding: 30px 0;
+  }
+}

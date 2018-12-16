@@ -31,9 +31,9 @@ class ContactsPage extends React.Component {
                 <li className="contacts__item">
                   <h3>Реквизиты:</h3>
                   <p>
-                    р/с BY35BAPB30126521100100000000
+                    р/с: BY35BAPB30126521100100000000
                     <br />
-                    код BAPBBY2X
+                    код: BAPBBY2X
                     <br />
                     ОАО "БЕЛАГРОПРОМБАНК"
                     <br />г. Минск

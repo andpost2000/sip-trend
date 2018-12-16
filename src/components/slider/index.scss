@@ -91,3 +91,12 @@
     }
   }
 }
+
+@media (max-width: $tab) {
+  .slider {
+    &__item-slogan {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+}

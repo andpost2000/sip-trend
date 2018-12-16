@@ -3,7 +3,6 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1200px;
   height: 100vh;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -53,8 +52,13 @@ ul {
 
 .container {
   max-width: 1300px;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 0 auto;
+  @media (max-width: $tab) {
+    max-width: 768px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 }
 
 #root {
@@ -102,4 +106,8 @@ ul {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 500;
+  @media (max-width: $tab) {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 }

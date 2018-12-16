@@ -39,3 +39,34 @@
     }
   }
 }
+
+@media (max-width: $tab) {
+  .project-row {
+    &__img {
+     width: 378px;
+     height: 213px;
+    }
+    &__content {
+      margin-left: 10px;
+    }
+    &__title {
+      margin-top: 0;
+      font-size: 16px;
+    }
+    &__item {
+      font-size: 12px;
+      b {
+        font-size: 11px;
+        width: 105px;
+      }
+      sup {
+        display: inline-block;
+        margin-right: -10px;
+        font-size: 9px;
+      }
+    }
+    &__price {
+      margin: 5px 0;
+    }
+  }
+}
