@@ -69,3 +69,11 @@
     }
   }
 }
+
+@media (max-width: $mob) {
+  .header {
+    &__promo {
+      display: none;
+    }
+  }
+}

@@ -38,7 +38,31 @@
   }
 
   &__contacts {
+    width: 170px;
     color: #fff;
     line-height: 25px;
+  }
+}
+
+@media (max-width: $mob) {
+  .footer {
+    .container {
+      display: block;
+    }
+    &__navigation {
+      display: none;
+    }
+    &__contacts {
+      width: auto;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .social {
+      width: auto;
+      justify-content: center;
+      &__link {
+        margin: 10px;
+      }
+    }
   }
 }

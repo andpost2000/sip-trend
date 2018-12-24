@@ -1,5 +1,6 @@
 import autobind from 'autobind-decorator';
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './project-page.scss';
 
@@ -37,11 +38,11 @@ class ProjectPage extends React.Component {
               <div className="project__price">
                 <span>Цена от:</span> {project.totalArea * project.price} $
                 <p className="project__price-descript">
-                  * Цена указана для комплектации "Стандарт"
+                  * Цена указана для комплектации "Премиум"
                 </p>
-                <a href="#" className="project__link link">
+                <NavLink to="/complect"  className="project__link link">
                   Подробнее о комплектациях
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

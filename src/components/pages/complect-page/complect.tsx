@@ -17,12 +17,12 @@ class Complect extends React.Component<Props> {
             <div className="complect" key={index}>
               <h2 className="complect__title">{complect.name}</h2>
               <p className="complect__price">
-                В данной комплектации стоимость{' '}
+                В данной комплектации стоимость&nbsp;
                 <b>
                   от {complect.price}$ м<sup>2</sup>
                 </b>
               </p>
-              <p>Комплектацию можно менять</p>
+              <p className="complect__change">Комплектацию можно менять</p>
               <div className="complect__description">
                 <div className="complect__text">
                   {complect.params.map((param: any, indexParam: number) => (

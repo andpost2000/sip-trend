@@ -62,3 +62,30 @@
     }
   }
 }
+
+@media (max-width: $mob) {
+  .contacts {
+    padding: 10px 0;
+    &__sub-title {
+      margin: 0;
+    }
+    &__inner {
+      display: block;
+    }
+    &__list {
+      width: 100%;
+    }
+    &__item {
+      margin-bottom: 5px;
+      p {
+        line-height: 20px;
+      }
+    }
+    &__map {
+      width: 100%;
+      min-height: 350px;
+      max-height: 350px;
+      margin-top: 10px;
+    }
+  }
+}

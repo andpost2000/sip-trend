@@ -41,3 +41,13 @@
     }
   }
 }
+
+@media (max-width: $mob) {
+  .article {
+    &__img {
+      min-width: 100%;
+      min-height: 75vw;
+      padding-right: 0;
+    }
+  }
+}

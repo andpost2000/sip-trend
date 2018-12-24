@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+// import Helmet from "react-helmet";
 import ArticleHome from 'src/components/article-home/article-home';
 import HitProjects from 'src/components/hit-projects/hit-projects';
 import Promo from 'src/components/promo/promo';
@@ -25,6 +26,9 @@ class IndexPage extends React.Component<Props, State> {
   public render(): JSX.Element {
     return (
       <React.Fragment>
+        {/* <Helmet
+          title='new title'
+        /> */}
         <MainSlider/>
         <Promo />
         <HitProjects />

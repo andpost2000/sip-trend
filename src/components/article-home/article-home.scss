@@ -56,3 +56,34 @@
     }
   }
 }
+@media (max-width: $mob) {
+  .article-home {
+    &__description {
+      display: block;
+      padding: 0;
+    }
+    &__img {
+      max-width: 100%;
+      max-height: auto;
+      min-width: 100%;
+      min-height: auto;
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+      padding-bottom: 0;      
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-left: 10px;
+      font-size: 15px;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+    .link {
+      display: inline-block;
+      padding: 10px 5px;
+      font-size: 18px;
+    }
+  }
+}

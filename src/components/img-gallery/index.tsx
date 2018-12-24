@@ -22,7 +22,7 @@ class ImgGallery extends React.Component<Props> {
 
     return (
       <ImageGallery
-        thumbnailPosition={this.props.plan ? 'left' : 'right'}
+        thumbnailPosition={window.innerWidth > 767 ? (this.props.plan ? 'left' : 'right') : 'bottom'}
         items={images}
       />
     );

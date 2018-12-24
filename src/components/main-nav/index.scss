@@ -11,9 +11,14 @@
     display: flex;
   }
 
+  &__toggle {
+    display: none;
+  }
+
   &__link {
     display: block;
     padding: 17px;
+    box-sizing: border-box;
     color: #fff;
     font-size: 16px;
     line-height: 18px;
@@ -25,6 +30,7 @@
     &:hover {
       background-color: #1EC8BB;
     }
+
     &:not(.active):active {
       opacity: 0.9;
     }
@@ -33,5 +39,112 @@
       cursor: default;
       background-color: rgba(255, 255, 255, 0.2);
     }
+  }
+}
+
+
+@media (max-width: $mob) {
+  .main-nav {
+    &__list {
+      position: relative;
+      display: block;
+
+      &.open {
+        .main-nav__link {
+          position: relative;
+          height: 53px;
+          padding: 17px;
+          transform: scale(1);
+          border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        }
+        .svg-menu-toggle {
+          .bar:nth-of-type(1) {
+            -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
+            transform: rotate(-45deg) translateY(0) translateX(0);
+          }
+      
+          .bar:nth-of-type(2) {
+            opacity: 0;
+          }
+      
+          .bar:nth-of-type(3) {
+            -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
+            transform: rotate(45deg) translateY(0em) translateX(0em);
+          }
+        }
+      }
+    }
+
+    &__toggle {
+      display: block;
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      z-index: 10;
+    }
+
+    &__link {
+      height: 0;
+      padding: 0;
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      transform: scale(0);
+      transition: 0.3s;
+
+      &.active {
+        height: 53px;
+        padding: 17px;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        position: relative;
+        background-color: $tc-1;
+        transform: scale(1);
+        opacity: 1;
+        z-index: 5;
+      }
+
+      &.project-link {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.main-nav__toggle button {
+  border: 0;
+  background-color: transparent;
+  .svg-menu-toggle {
+    fill: #fff;
+    pointer-events: all; //needs to be there so the hover works
+    cursor: pointer;
+
+    .bar {
+      -webkit-transform: rotate(0) translateY(0) translateX(0);
+      transform: rotate(0) translateY(0) translateX(0);
+      opacity: 1;
+      -webkit-transform-origin: 20px 10px;
+      transform-origin: 20px 10px;
+      -webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+      transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+    }
+
+    .bar:nth-of-type(1) {
+      -webkit-transform-origin: 20px 10px;
+      transform-origin: 20px 10px;
+    }
+
+    .bar:nth-of-type(3) {
+      -webkit-transform-origin: 20px 20px;
+      transform-origin: 20px 20px;
+    }
+  }
+
+  .inline-svg {
+    display: block;
+    margin: 0 auto;
   }
 }

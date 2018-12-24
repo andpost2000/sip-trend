@@ -58,3 +58,24 @@
     margin: 0 1%;
   }
 }
+
+@media (max-width: $mob) {
+  .project-desc {
+    display: block;
+    &__list-wrap {
+      width: 100%;
+    }
+    &__list  {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    &__img-wrap {
+      width: 100%;
+      margin: 0;
+    }
+    .image-gallery {
+      min-width: 100%;
+    }
+  }
+}

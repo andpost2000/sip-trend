@@ -56,3 +56,16 @@
     }
   }
 }
+
+@media (max-width: $mob) {
+  .reviews {
+    &__video-wrap {
+      width: 100vw;
+      height: 50vw;
+      padding-top: 30px;
+    }
+    button {
+      transform: translateX(0);
+    }
+  }
+}

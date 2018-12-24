@@ -5,6 +5,16 @@
     font-size: 20px;
     line-height: 30px;
   }
+  &__change {
+    text-decoration: underline;
+  }
+  &__price {
+    b {
+      color: red;
+      font-size: 24px;
+      border-bottom: 1px dashed red;
+    }
+  }
 }
 
 
@@ -12,6 +22,31 @@
   .complect {
     &__text {
       font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $mob) {
+  .complect {
+    &__text {
+      line-height: 20px;
+    }
+    &__title {
+      margin: 10px 0;
+    }
+    p {
+      margin: 5px 0;
+    }
+    h4 {
+      margin: 10px;
+      margin-bottom: 0;
+    }
+    ol {
+      padding-left: 15px;
+      margin-bottom: 5px;
+    }
+    b {
+      white-space: nowrap;
     }
   }
 }

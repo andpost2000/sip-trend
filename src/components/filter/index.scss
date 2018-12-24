@@ -129,3 +129,31 @@
     }
   }
 }
+
+@media (max-width: $mob) {
+  .filter {
+    padding: 0;
+    &__title {
+      display: inline-block;
+      margin: 10px 0;
+      margin-right: 50px;
+    }
+    fieldset {
+      overflow: hidden;
+      height: 0;
+      padding: 0;
+      margin-bottom: 0;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    &.open {
+      fieldset {
+        overflow: visible;
+        height: auto;
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        opacity: 1;
+      }
+    }
+  }
+}

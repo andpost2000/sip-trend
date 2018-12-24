@@ -61,7 +61,11 @@ class ContactsPage extends React.Component {
                 </li>
               </ul>
               <div className="contacts__map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A73c28a5aae138832f1ccc97f3272300c95c85f541af7ac436f1ed4fedba7b26d&amp;source=constructor" width="100%" height="500"/>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A73c28a5aae138832f1ccc97f3272300c95c85f541af7ac436f1ed4fedba7b26d&amp;source=constructor"
+                  width="100%"
+                  height={window.innerWidth > 767 ? 500 : 350}
+                />
               </div>
             </div>
           </div>

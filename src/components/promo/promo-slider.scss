@@ -1,3 +1,5 @@
+@import '../../style/variables.scss';
+
 .promo-slider {
   .slick-slide>div {
     display: flex;
@@ -5,5 +7,23 @@
   }
   &__item {
     width: 100%;
+  }
+}
+
+@media (max-width: $mob) {
+  .promo-slider  {
+    padding: 10px 0;
+    .slick-next {
+      right: 0;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    button:before {
+      color: #000;
+    } 
+    .slick-dots {
+      bottom: -5px;
+    }
   }
 }

@@ -1,15 +1,28 @@
+import autobind from 'autobind-decorator';
 import classNames from 'classnames';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Field, InjectedFormProps, reduxForm } from 'redux-form';
 
+
 interface ReduxProps {
   radioCheck: string;
 }
+interface State {
+  open: boolean;
+}
+
 
 interface Props extends ReduxProps, InjectedFormProps {}
 
-class ComponentForm extends React.Component<Props> {
+class ComponentForm extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+
+    this.state = {
+      open: false,
+    }
+  }
   // функция, которая возвращает свою реализацию
 
   public renderField = ({ id, input, label, labelSup, type, className }: any) => (
@@ -27,8 +40,11 @@ class ComponentForm extends React.Component<Props> {
     console.log(this.props.radioCheck)
 
     return (
-      <form className="projects__filter filter" onSubmit={handleSubmit}>
+      <form className={classNames("projects__filter filter", {'open': this.state.open})} onSubmit={handleSubmit}>
         <h3 className="filter__title">Фильтр</h3>
+        {window.innerWidth > 767 ? null :
+          <button onClick={this.toggle}>{this.state.open ? 'Скрыть фильтр' : 'Показать фильтр'}</button>
+        }
         <fieldset>
           <legend className="filter__legend">По площади:</legend>
           <div className="filter__area">
@@ -103,16 +119,12 @@ class ComponentForm extends React.Component<Props> {
             />
           </div>
         </fieldset>
-        {/* <button className="btn" type="submit">
-          Показать
-        </button>
-        <fieldset>
-          <legend className="filter__legend">По цене:</legend>
-          <div className="filter__price">
-          </div>
-        </fieldset> */}
       </form>
     );
+  }
+  @autobind
+  private toggle(): void {
+    this.setState({ open: !this.state.open });
   }
 }
 const mapStateToProps = (state: any): ReduxProps => {

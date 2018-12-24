@@ -14,7 +14,7 @@ class ProjectCard extends React.Component<Props> {
   public render(): JSX.Element {
     return (
       <div className="promo-slider__item project-card">
-        <h3 className="project-card__title">Проект дома из СИП №{this.props.id}</h3>
+        <h3 className="project-card__title">Проект дома №{this.props.id}</h3>
         <p className="project-card__text">
           Общая площадь: {this.props.totalArea} м<sup>2</sup>
         </p>

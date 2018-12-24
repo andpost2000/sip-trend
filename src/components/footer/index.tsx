@@ -21,9 +21,9 @@ class Footer extends React.Component {
           </div>
           <SocialLink />
           <div className='footer__contacts'>
-            Беларусь, 211875<br/>
-            г. Поставы,<br/>
-            ул. Космонавтов 66-6<br/>
+            Беларусь, 211875,
+            г.&nbsp;Поставы,
+            ул.&nbsp;Космонавтов 66-6,
             +375 33 320 90 08
           </div>
         </div>

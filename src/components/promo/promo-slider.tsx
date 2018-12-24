@@ -17,7 +17,7 @@ class PromoSlider extends React.Component {
       infinite: true,
       pauseOnDotsHover: true,
       slidesToScroll: 1,
-      slidesToShow: 2,
+      slidesToShow: window.innerWidth > 760 ? 2 : 1,
       speed: 500
     };
     return (
