@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Helmet from 'react-helmet';
 
 import './index.scss';
 
@@ -6,6 +7,14 @@ class ContactsPage extends React.Component {
   public render(): JSX.Element {
     return (
       <React.Fragment>
+        <Helmet
+          title='Каркасный дом | Контакты'
+          meta={[
+            {"name": "description", "content": "Контакты 'ООО СипТренд', время работы и реквизиты компании."},
+            {"name": "keywords", "content": "Каркасный дом, Дом из сип панелей, Купить СИП панели, дома из сип панели, дома из сип панелей цена, дом из сип Минск, дом из сип Беларусь, Сип панель, строительство дома из сип панелей, дачный домик, проекты, красивые проекты, строительство, каркасный дом, энергоэффективный дом, дом под ключ, сип цена, дачный дом, построить дом, дом из сип панелей цена, дом проект"}
+          ]}
+        />
+        <h1 className="visually-hidden">Контакты ООО СИП Тренд</h1>
         <div className="contacts">
           <div className="container">
             <div className="contacts__title section-title">Наши контакты</div>

@@ -1,5 +1,11 @@
 ErrorDocument 404 /index.html
 
+#
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.siptrend.by$ [NC]
+RewriteRule ^(.*)$ https://siptrend.by/$1 [R=301,L]
+
+
 # BEGIN Expire headers
 <ifModule mod_expires.c>
     ExpiresActive On

@@ -1,0 +1,12 @@
+User-Agent: Google
+Allow: /
+Sitemap: https://siptrend.by/sitemap.xml
+
+User-Agent: Yandex
+Allow: /
+Sitemap: https://siptrend.by/sitemap.xml
+
+User-Agent: *
+Allow: /
+Host: siptrend.by
+Sitemap: https://siptrend.by/sitemap.xml
