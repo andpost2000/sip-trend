@@ -1,9 +1,16 @@
+RequestHeader set X-Prerender-Token "jWGOgubl2ViQhcc3pGeN"
+
 ErrorDocument 404 /index.html
 
-#
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.siptrend.by$ [NC]
-RewriteRule ^(.*)$ https://siptrend.by/$1 [R=301,L]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
 
 
 # BEGIN Expire headers

@@ -7,7 +7,7 @@ class SocialLink extends React.Component {
     return (
       <div className="social">
         <a
-          href="http://facebook.com"
+          href="https://www.facebook.com/profile.php?id=100030642581955"
           aria-label="facebook"
           className="social__link"
           target="_blank"
@@ -49,8 +49,8 @@ class SocialLink extends React.Component {
           </svg>
         </a>
         <a
-          href="http://twitter.com"
-          aria-label="twitter"
+          href="https://ok.ru/profile/562627228671"
+          aria-label="odnoklassniki"
           className="social__link"
           target="_blank"
         >
@@ -71,7 +71,7 @@ class SocialLink extends React.Component {
               <g
                 id="Component-/-Sharing-/-Desktop-/-Expanded"
                 transform="translate(-164.000000, -14.000000)"
-                fill="#00077B"
+                fill="currentColor"
               >
                 <g id="Button" transform="translate(147.000000, 0.000000)">
                   <path
