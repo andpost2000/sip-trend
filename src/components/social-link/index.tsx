@@ -11,6 +11,7 @@ class SocialLink extends React.Component {
           aria-label="facebook"
           className="social__link"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +32,7 @@ class SocialLink extends React.Component {
           aria-label="instagramm"
           className="social__link"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +55,7 @@ class SocialLink extends React.Component {
           aria-label="odnoklassniki"
           className="social__link"
           target="_blank"
+          rel="noopener"
         >
           <svg
             width="10px"
@@ -88,6 +91,7 @@ class SocialLink extends React.Component {
           aria-label="youtube"
           className="social__link"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
