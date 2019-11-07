@@ -18,15 +18,10 @@ class EditPost extends React.Component<Props> {
         // инициализация
         initializePost(post);
     }
-   
-    public handleSubmit = (values: any) => {
-        // tslint:disable-next-line:no-console
-        console.log(values);
-    };
     public render() {
         return (
             <div>
-                <Form onSubmit={this.handleSubmit} />
+                <Form />
             </div>
         );
     }

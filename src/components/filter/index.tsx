@@ -21,12 +21,8 @@ class FilterComponent extends React.Component<Props> {
     initializePost(post);
   }
 
-  public handleSubmit = (values: any) => {
-    // tslint:disable-next-line:no-console
-    console.log(values);
-  };
   public render() {
-    return <FilterForm onSubmit={this.handleSubmit} />;
+    return <FilterForm />;
   }
 }
 // прокидываем в props функцию для инициализации формы

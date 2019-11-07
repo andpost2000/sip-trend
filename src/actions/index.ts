@@ -2,6 +2,25 @@
 export const INCREMENT = 'PLUS';
 export const DECRIMENT = 'MINUS';
 export const AREA = 'AREA';
+export const FETCH_DATA = 'FETCH_DATA';
+export const RESPONSE_DATA = 'RESPONSE_DATA';
+
+export const fetchData = (url: string): any => {
+  return {
+    payload: url,
+    type: FETCH_DATA,
+  }
+}
+
+export const responseData = (status: string, data: any[]) => {
+  return {
+    payload: {
+      data,
+      status,
+    },
+    type: RESPONSE_DATA,
+  }
+}
 
 export function increment(value: any) {
   return {
@@ -10,7 +29,7 @@ export function increment(value: any) {
   };
 }
 
-export function decriment(value: any) {
+export function decrement(value: any) {
   return {
     payload: value--,
     type: DECRIMENT

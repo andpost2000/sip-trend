@@ -7,19 +7,35 @@ import './project-page.scss';
 
 import ImgGallery from 'src/components/img-gallery';
 import ProjectDesc from './project-desc';
+interface Props {
+  pr?: any[];
+}
 
-class ProjectPage extends React.Component {
+interface State {
+  projects: any[];
+}
+class ProjectPage extends React.Component<Props, State> {
   private id = this.getId();
   private data = require('src/data.json');
+
+  constructor(props: Props) {
+    super(props);
+
+    this.state = {
+      projects: [],
+    }
+  }
   public render(): JSX.Element {
     const project = this.data.projects[this.id - 1];
+    // tslint:disable-next-line:no-console
+    console.log(this.state.projects);
     return (
       <div className="project">
         <Helmet
           title={`Каркасный дом | Проект каркасного дома №${this.id}.`}
           meta={[
-            {name: 'description', content: `Проект каркасного дома №${this.id}.`},
-            {name: 'keywords', content: 'Каркасный дом, Дом из сип панелей, Купить СИП панели, дома из сип панели, дома из сип панелей цена, дом из сип Минск, дом из сип Беларусь, Сип панель, строительство дома из сип панелей, дачный домик, проекты, красивые проекты, строительство, каркасный дом, энергоэффективный дом, дом под ключ, сип цена, дачный дом, построить дом, дом из сип панелей цена, дом проект'}
+            { name: 'description', content: `Проект каркасного дома №${this.id}.` },
+            { name: 'keywords', content: 'Каркасный дом, Дом из сип панелей, Купить СИП панели, дома из сип панели, дома из сип панелей цена, дом из сип Минск, дом из сип Беларусь, Сип панель, строительство дома из сип панелей, дачный домик, проекты, красивые проекты, строительство, каркасный дом, энергоэффективный дом, дом под ключ, сип цена, дачный дом, построить дом, дом из сип панелей цена, дом проект' }
           ]}
         />
         <h1 className="visually-hidden">Проект каркасного дома №{this.id}</h1>

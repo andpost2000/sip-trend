@@ -9,14 +9,15 @@ interface ReduxState {
   checkboxes: any;
 }
 
-class ProjectRowComponent extends React.Component<ReduxState> {
+interface Props extends ReduxState {
+  projects: any;
+}
+
+class ProjectRowComponent extends React.Component<Props> {
   public render(): JSX.Element {
     const { checkboxes } = this.props;
-    // tslint:disable-next-line:no-console
-    console.log(checkboxes ? checkboxes.Garage : null);
 
-    const data = require('../../data.json');
-    let projects = data.projects;
+    let projects = this.props.projects;
     if (checkboxes)  {
       const areaInMin = checkboxes.Area ? checkboxes.Area - 50 : 0;
       const areaInMax = checkboxes.Area ? checkboxes.Area : 1000;
@@ -52,8 +53,6 @@ class ProjectRowComponent extends React.Component<ReduxState> {
     );
   }
   private filterTotal(check: number, min: number, max: number, area: string) {
-    // tslint:disable-next-line:no-console
-    console.log("=filter=", area);
     if (area === "0" || (check <= max && check > min)) {
       return true;
     }

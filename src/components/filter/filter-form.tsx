@@ -36,8 +36,6 @@ class ComponentForm extends React.Component<Props, State> {
   );
   public render() {
     const { handleSubmit, radioCheck } = this.props;
-    // tslint:disable-next-line:no-console
-    console.log(this.props.radioCheck)
 
     return (
       <form className={classNames("projects__filter filter", {'open': this.state.open})} onSubmit={handleSubmit}>
