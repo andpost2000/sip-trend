@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import './index.scss';
 
+import { Data } from 'src/interfaces/interfaces';
 import ProjectRowItem from './project-row-item';
 
 interface ReduxState {
@@ -10,14 +11,14 @@ interface ReduxState {
 }
 
 interface Props extends ReduxState {
-  projects: any;
+  data: Data;
 }
 
 class ProjectRowComponent extends React.Component<Props> {
   public render(): JSX.Element {
     const { checkboxes } = this.props;
 
-    let projects = this.props.projects;
+    let projects = this.props.data.projects;
     if (checkboxes)  {
       const areaInMin = checkboxes.Area ? checkboxes.Area - 50 : 0;
       const areaInMax = checkboxes.Area ? checkboxes.Area : 1000;
@@ -76,50 +77,3 @@ function mapStateToProps(state: any) {
 const ProjectRow = connect(mapStateToProps)(ProjectRowComponent);
 
 export default ProjectRow;
-
-// function mapDispatchToProps(dispatch: any) {
-//   return {
-//     decriment: (value: any) => {
-//       dispatch(decriment(value));
-//     },
-//     increment: (value: any) => {
-//       dispatch(increment(value));
-//     }
-//   };
-// }
-
-{
-  /* <li className="projects__item project-row">
-          <img className="project-row__img" src="img/2.jpg" alt="Поект 11"/>
-          <div className="project-row__content">
-            <h3 className="project-row__title">Проект дома из СИП №11</h3>
-            <ul className="project-row__list">
-              <li className="project-row__item"><b>Общая площадь:</b>68 м<sup>2</sup></li>
-              <li className="project-row__item"><b>Кол-во этажей:</b>1</li>
-              <li className="project-row__item"><b>Наличие террасы:</b>Да</li>
-              <li className="project-row__item"><b>Наличие гаража:</b>Нет</li>
-            </ul>
-            <p className="project-row__price">
-              <span>Цена от:</span> 9 050 $
-            </p>
-            <a href="#" className="project-row__link btn">Подробнее</a>
-          </div>
-        </li>
-        <li className="projects__item project-row">
-          <img className="project-row__img" src="img/1.jpg" alt="Поект 11"/>
-          <div className="project-row__content">
-            <h3 className="project-row__title">Проект дома из СИП №11</h3>
-            <ul className="project-row__list">
-              <li className="project-row__item"><b>Общая площадь:</b>48 м<sup>2</sup></li>
-              <li className="project-row__item"><b>Кол-во этажей:</b>1</li>
-              <li className="project-row__item"><b>Наличие террасы:</b>Да</li>
-              <li className="project-row__item"><b>Наличие гаража:</b>Нет</li>
-            </ul>
-            <p className="project-row__price">
-              <span>Цена от:</span> 6 050 $
-            </p>
-            <a href="#" className="project-row__link btn">Подробнее</a>
-          </div>
-        </li>
-       */
-}

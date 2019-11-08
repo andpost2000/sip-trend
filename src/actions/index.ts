@@ -1,7 +1,8 @@
+import { Data } from 'src/interfaces/interfaces';
 
-export const INCREMENT = 'PLUS';
-export const DECRIMENT = 'MINUS';
 export const AREA = 'AREA';
+export const SEND_FORM = 'SEND_FORM';
+export const RESPONSE_FORM = 'RESPONSE_FORM';
 export const FETCH_DATA = 'FETCH_DATA';
 export const RESPONSE_DATA = 'RESPONSE_DATA';
 
@@ -12,7 +13,7 @@ export const fetchData = (url: string): any => {
   }
 }
 
-export const responseData = (status: string, data: any[]) => {
+export const responseData = (status: string, data: Data) => {
   return {
     payload: {
       data,
@@ -22,18 +23,22 @@ export const responseData = (status: string, data: any[]) => {
   }
 }
 
-export function increment(value: any) {
+export const sendForm = (url: string, data: any, method: string) => {
   return {
-    payload: value,
-    type: INCREMENT
-  };
+    payload: {
+      data,
+      method,
+      url,
+    },
+    type: SEND_FORM,
+  }
 }
 
-export function decrement(value: any) {
+export const responseForm = (result: string) => {
   return {
-    payload: value--,
-    type: DECRIMENT
-  };
+    payload: result,
+    type: RESPONSE_FORM,
+  }
 }
 
 export function changedFilter(name: any) {
